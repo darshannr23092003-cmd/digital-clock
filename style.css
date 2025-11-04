@@ -1,0 +1,92 @@
+/* style.css */
+:root {
+  --bg: #0f172a;      /* slate-900 */
+  --fg: #e2e8f0;      /* slate-200 */
+  --muted: #94a3b8;   /* slate-400 */
+  --card: #111827;    /* gray-900 */
+  --accent: #38bdf8;  /* sky-400 */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+  background: var(--bg);
+  color: var(--fg);
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: min(700px, 92vw);
+  padding: 1.25rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.switch {
+  display: inline-flex;
+  gap: .5rem;
+  align-items: center;
+  font-size: .95rem;
+  color: var(--muted);
+}
+
+.btn {
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid #1f2937;
+  padding: .5rem .75rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.clock {
+  background: var(--card);
+  border: 1px solid #1f2937;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.time {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.date {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+}
+
+.footer {
+  margin-top: 1rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Light theme */
+.light {
+  --bg: #f8fafc;
+  --fg: #0f172a;
+  --muted: #475569;
+  --card: #ffffff;
+  --accent: #0ea5e9;
+}
+
